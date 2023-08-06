@@ -7,19 +7,11 @@ nabor_1 = []
 nabor_2 = []
 
 while len(nabor_1) < first_nabor:
-    try:
-        a = int(input("Элемент первого набора: "))
-        nabor_1.append(a)
-    except ValueError:
-        print("Ты чё, цифра где?")
-        continue
+    a = int(input("Элемент первого набора: "))
+    nabor_1.append(a)
 while len(nabor_2) < second_nabor:
-    try:
-        b = int(input("Элемент второго набора: "))
-        nabor_2.append(b)
-    except ValueError:
-        print("Ты чё, цифра где?")
-        continue
+    b = int(input("Элемент второго набора: "))
+    nabor_2.append(b)
 print(nabor_1, nabor_1, end=" ")
 
 sort_nabor = set(nabor_1+nabor_2)
